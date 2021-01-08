@@ -16,3 +16,5 @@ if __name__ == "__main__":
             logging.warning(f"Too much parameters, ignoring all except {sys.argv[1]}")
         moves = sys.argv[1].split(' ')
         cube.apply_moves(moves)
+        for key in cube.faces:
+            print(key, ":", f"{cube.faces[key][0:3]}'\n    {cube.faces[key][3:6]}\n    {cube.faces[key][6:9]}", f"({len(cube.faces[key])})")
