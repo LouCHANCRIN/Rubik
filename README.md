@@ -1,0 +1,2 @@
+# Rubik
+Rubki cube solver
